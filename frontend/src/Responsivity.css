@@ -1,0 +1,350 @@
+@media screen and (max-width: 1600px) {
+  .siteTitle h2 {
+    font-size: 4.5em;
+  }
+  .siteTitle .decorSpan {
+    width: 50%;
+    margin: 0 0 50px;
+  }
+  .header-container .wrapper {
+    height: 100%;
+    max-width: 100vw;
+  }
+  .header-container .wrapper .header .header-text {
+    width: 80%;
+  }
+  .header-container .wrapper .header .header-text span {
+    width: 40%;
+  }
+  .aboutUs {
+    width: 100%;
+  }
+  .aboutUs .aboutUsContainer {
+    padding: 4px 165px;
+  }
+  .aboutUs .aboutUsContainer .aboutUsleft {
+    width: 45%;
+  }
+  .aboutUs .aboutUsContainer .aboutUsText p {
+    font-size: 1.2em;
+  }
+  .pizza-card .container-with-dots {
+    width: 80vw;
+  }
+  .pizza-card .container-with-dots .pizzaContainer {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .siteTitle h2 {
+    font-size: 4em;
+  }
+  .siteTitle .decorSpan {
+    width: 60%;
+    margin: 0 0 50px;
+  }
+  .header-container .wrapper {
+    height: 100%;
+    max-width: 100vw;
+  }
+  .header-container .wrapper .header .header-text {
+    width: 80%;
+  }
+  .header-container .wrapper .header .header-text span {
+    width: 40%;
+  }
+  .aboutUs .aboutUsContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutUs .aboutUsContainer .aboutUsText {
+    padding: 0px 30px;
+    margin-top: 20px;
+  }
+  .pizza-card .pizzaContainer {
+    width: 350px;
+  }
+  .pizza-card .pizzaContainer img {
+    width: 350px !important;
+    height: 250px !important;
+  }
+  .pizza-card .pizzaContainer .pizzaDetails {
+    width: 350px;
+    height: 250px;
+  }
+  .pizza-card .pizzaContainer .pizzaDetails p {
+    overflow-wrap: break-word;
+    -webkit-hyphens: manual;
+        -ms-hyphens: manual;
+            hyphens: manual;
+  }
+  .pizza-card .pizzaContainer .pizzaContainer:hover .pizzaDetails {
+    width: 350px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .aboutUs .aboutUsContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 4px 165px;
+  }
+  .aboutUs .aboutUsContainer .aboutUsleft {
+    width: 55%;
+  }
+  .aboutUs .aboutUsContainer .aboutUsText {
+    width: 70%;
+  }
+  .aboutUs .aboutUsContainer .aboutUsText p {
+    text-align: center;
+  }
+  .pizza-card .container-with-dots {
+    width: 90vw;
+  }
+  .pizza-card .container-with-dots .pizzaContainer {
+    margin: 20px 0;
+  }
+  .footer {
+    width: 100vw;
+    max-height: none;
+    height: 100%;
+    margin: 40px auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .footerright {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .siteTitle h2 {
+    font-size: 3.5em;
+    letter-spacing: 5px;
+  }
+  .siteTitle .decorSpan {
+    width: 60%;
+    margin: 0 0 40px;
+  }
+  .header-container .wrapper {
+    height: 100%;
+    max-width: 100vw;
+  }
+  .header-container .wrapper .header .header-text {
+    width: 80%;
+  }
+  .header-container .wrapper .header .header-text h1 {
+    font-size: 4em;
+  }
+  .header-container .wrapper .header .header-text span {
+    width: 45%;
+  }
+  .header-container .wrapper .header .header-text .sloganText {
+    font-size: 2em;
+    margin: 20px 0 0;
+  }
+  .header-container .wrapper .header .header-text h3 {
+    font-size: 2rem;
+  }
+  .navBar {
+    display: none;
+  }
+  .scrolled {
+    display: none;
+  }
+  .aboutUs .aboutUsContainer {
+    padding: 4px 100px;
+  }
+  .aboutUs .aboutUsContainer .aboutUsleft {
+    width: 100%;
+    background-image: url("./img/aboutUs/aboutuspizza.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 auto;
+  }
+  .aboutUs .aboutUsContainer .aboutUsleft .pizza1 {
+    display: none;
+  }
+  .aboutUs .aboutUsContainer .aboutUsleft .pizza2 {
+    display: none;
+  }
+  .aboutUs .aboutUsContainer .aboutUsleft .pizza3 {
+    display: none;
+  }
+  .aboutUs .aboutUsContainer .aboutUsText {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .pizza-card .container-with-dots {
+    width: 100vw;
+  }
+  .pizza-card .container-with-dots .pizzaContainer {
+    width: 400px;
+    margin: 20px;
+  }
+  .pizza-card .container-with-dots img {
+    width: 400px !important;
+    height: 300px !important;
+  }
+  .pizza-card .container-with-dots .pizzaDetails {
+    width: 400px;
+    height: 300px;
+  }
+  .pizza-card .container-with-dots .pizzaContainer:hover .pizzaDetails {
+    width: 400px;
+    height: 300px;
+  }
+  .footer {
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .siteTitle h2 {
+    font-size: 3.5em;
+    letter-spacing: 4px;
+  }
+  .siteTitle .decorSpan {
+    width: 70%;
+    margin: 0 0 30px;
+  }
+  .header-container .wrapper .header .header-text {
+    top: 75%;
+    left: 20%;
+    -webkit-transform: translate(-20%, -75%);
+            transform: translate(-20%, -75%);
+  }
+  .header-container .wrapper .header .header-text span {
+    width: 60%;
+  }
+  .aboutUsContainer {
+    width: 100vw;
+    padding: 0 30px;
+  }
+  .aboutUsContainer .aboutUsleft {
+    margin-left: -50%;
+  }
+  .pizza-card .container-with-dots .pizzaContainer {
+    width: 350px;
+    margin: 20px auto;
+  }
+  .pizza-card .container-with-dots img {
+    width: 400px !important;
+    height: 350px !important;
+  }
+  .pizza-card .container-with-dots .pizzaDetails {
+    width: 400px;
+    height: 350px !important;
+  }
+  .pizza-card .container-with-dots .pizzaContainer:hover .pizzaDetails {
+    width: 350px;
+    height: 300px;
+  }
+  .footer .footerright {
+    gap: 5px;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .siteTitle h2 {
+    font-size: 3em;
+  }
+  .siteTitle .decorSpan {
+    width: 75%;
+    margin: 0 0 20px;
+  }
+  .header-container .wrapper {
+    max-width: 100vw;
+  }
+  .header-container .wrapper .header .header-text h1 {
+    font-size: 4em;
+  }
+  .header-container .wrapper .header .header-text span {
+    width: 80%;
+  }
+  .header-container .wrapper .header .header-text .sloganText {
+    font-size: 2em;
+    color: #ffc601;
+    margin: 20px 0 0;
+  }
+  .header-container .wrapper .header .header-text h3 {
+    font-size: 2rem;
+  }
+  .aboutUsContainer {
+    padding: 0 20px !important;
+    margin: 0 auto;
+  }
+  .aboutUsContainer .aboutUsleft {
+    padding: 0;
+  }
+  .weeksWrapper .weeksContainer .weeksContent h2 {
+    font-size: 3.5em;
+  }
+  .weeksWrapper .weeksContainer .weeksContent h3 {
+    font-size: 2em;
+  }
+  .footer .footerleft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer .footermiddle .footer-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .siteTitle h2 {
+    font-size: 2.5em;
+  }
+  .siteTitle .decorSpan {
+    width: 80%;
+    margin: 0 0 20px;
+  }
+  .siteTitle .aboutUsContainer {
+    padding: 0 5px !important;
+    margin: 0 auto;
+  }
+  .siteTitle .aboutUsContainer .aboutUsleft {
+    padding: 0;
+  }
+  .siteTitle .weeksWrapper .weeksContainer .weeksContent h2 {
+    font-size: 3em;
+  }
+  .siteTitle .weeksWrapper .weeksContainer .weeksContent h3 {
+    font-size: 1.8em;
+  }
+  .footer .footerleft h2 {
+    font-size: 2em;
+  }
+}
+/*# sourceMappingURL=Responsivity.css.map */

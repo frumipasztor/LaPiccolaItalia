@@ -1,0 +1,754 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  background-color: #050304;
+  color: #fdfefd;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.siteTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.siteTitle h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 5rem;
+  letter-spacing: 5px;
+  margin: 50px 0 0;
+}
+
+.siteTitle .decorSpan {
+  height: 5px;
+  width: 40%;
+  margin: 0 0 50px;
+  border-radius: 3rem;
+  background: #008c45;
+  background: -webkit-gradient(linear, left top, right top, from(#008c45), color-stop(50%, #f4f5f0), to(#cd212a));
+  background: linear-gradient(90deg, #008c45 0%, #f4f5f0 50%, #cd212a 100%);
+}
+
+.navBar {
+  padding: 18px 0;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  top: 0;
+  z-index: 9999;
+  -webkit-transition: 0.32s ease-in-out;
+  transition: 0.32s ease-in-out;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navBar .logo a {
+  opacity: 0;
+  position: absolute;
+  left: 18px;
+  top: 15px;
+  -webkit-transition: 0.32s ease-in-out;
+  transition: 0.32s ease-in-out;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fdfefd;
+}
+
+.navBar .navbar-link {
+  font-weight: 400;
+  color: #fff !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
+  opacity: 0.75;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.navBar .navbar-link:hover {
+  opacity: 1;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.navBar .active {
+  opacity: 1;
+}
+
+.scrolled {
+  padding: 18px 0;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  -webkit-transition: 0.32s ease-in-out;
+  transition: 0.32s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background-clip: padding-box;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-transform: uppercase;
+}
+
+.scrolled .logo a {
+  opacity: 1;
+  -webkit-transition: 0.32s ease-in-out;
+  transition: 0.32s ease-in-out;
+  position: absolute;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  left: 18px;
+  top: 15px;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fdfefd;
+}
+
+.scrolled .navbar-link {
+  font-weight: 400;
+  color: #fff !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
+  opacity: 0.75;
+  text-decoration: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.scrolled .navbar-link:hover {
+  opacity: 1;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.scrolled .active {
+  opacity: 1;
+}
+
+.header-container .wrapper {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.1))), url("./components/header/header.jpeg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url("./components/header/header.jpeg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+}
+
+.header-container .wrapper .header {
+  height: 100vh;
+  background: #050304;
+  background: -webkit-gradient(linear, left bottom, left top, from(#050304), color-stop(20%, rgba(0, 212, 255, 0)));
+  background: linear-gradient(0deg, #050304 0%, rgba(0, 212, 255, 0) 20%);
+}
+
+.header-container .wrapper .header .header-text {
+  position: relative;
+  width: 600px;
+  top: 50%;
+  left: 10%;
+  -webkit-transform: translate(-10%, -50%);
+          transform: translate(-10%, -50%);
+  color: #fdfefd;
+}
+
+.header-container .wrapper .header .header-text h1 {
+  font-size: 6rem;
+  letter-spacing: 4px;
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
+}
+
+.header-container .wrapper .header .header-text span {
+  position: absolute;
+  height: 5px;
+  width: 90%;
+  border-radius: 3rem;
+  background: #008c45;
+  background: -webkit-gradient(linear, left top, right top, from(#008c45), color-stop(50%, #f4f5f0), to(#cd212a));
+  background: linear-gradient(90deg, #008c45 0%, #f4f5f0 50%, #cd212a 100%);
+}
+
+.header-container .wrapper .header .header-text h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #ffc601;
+  margin: 20px 0 0;
+}
+
+.header-container .wrapper .header .header-text h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.aboutUs {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.aboutUs .aboutUsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px;
+}
+
+.aboutUs .aboutUsContainer .aboutUsleft {
+  width: 40%;
+  height: 425px;
+  padding: 40px;
+  position: relative;
+}
+
+.aboutUs .aboutUsContainer .aboutUsleft .pizza1 {
+  position: absolute;
+  z-index: 3;
+  top: 80px;
+  left: -3px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: rotate(-27deg);
+          transform: rotate(-27deg);
+  border-radius: 5px;
+}
+
+.aboutUs .aboutUsContainer .aboutUsleft .pizza1:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 200;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.aboutUs .aboutUsContainer .aboutUsleft .pizza2 {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotate(-9deg);
+          transform: rotate(-9deg);
+  border-radius: 5px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.aboutUs .aboutUsContainer .aboutUsleft .pizza2:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 200;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.aboutUs .aboutUsContainer .aboutUsleft .pizza3 {
+  position: absolute;
+  z-index: 2;
+  top: 124px;
+  left: 173px;
+  border-radius: 5px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
+.aboutUs .aboutUsContainer .aboutUsleft .pizza3:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 200;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.aboutUs .aboutUsContainer .aboutUsText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  padding: -10px 10px 0 10px;
+}
+
+.aboutUs .aboutUsContainer .aboutUsText p {
+  text-align: left;
+  font-size: 1.3em;
+}
+
+.pizza-card {
+  max-width: 100vw;
+  height: 100%;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.pizza-card .container-with-dots {
+  margin: 0 auto;
+  width: 70vw;
+}
+
+.pizza-card .container-with-dots .pizzaContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0;
+  width: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.pizza-card .container-with-dots .pizzaContainer img {
+  width: 400px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.pizza-card .container-with-dots .pizzaContainer .pizzaName {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2em;
+  letter-spacing: 2px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.pizza-card .container-with-dots .pizzaContainer .pizzaDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  background-clip: padding-box;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pizza-card .container-with-dots .pizzaContainer .pizzaDetails .pizzaName-hover {
+  position: relative;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2em;
+  letter-spacing: 2px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.pizza-card .container-with-dots .pizzaContainer .pizzaDetails span {
+  height: 5px;
+  width: 70%;
+  border-radius: 3rem;
+  background: #008c45;
+  background: -webkit-gradient(linear, left top, right top, from(#008c45), color-stop(50%, #f4f5f0), to(#cd212a));
+  background: linear-gradient(90deg, #008c45 0%, #f4f5f0 50%, #cd212a 100%);
+  margin-bottom: 10px;
+}
+
+.pizza-card .container-with-dots .pizzaContainer .pizzaDetails .toppings {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.pizza-card .container-with-dots .pizzaContainer .pizzaDetails .pizzaPrice {
+  font-size: 1.5rem;
+  color: #ffc601;
+}
+
+.pizza-card .container-with-dots .pizzaContainer:hover {
+  cursor: pointer;
+}
+
+.pizza-card .container-with-dots .pizzaContainer:hover .pizzaName {
+  opacity: 0%;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.pizza-card .container-with-dots .pizzaContainer:hover .pizzaDetails {
+  position: absolute;
+  top: 0;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  opacity: 100%;
+  width: 100%;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.weeksWrapper {
+  width: 100vw;
+  height: 100vh;
+  max-height: 500px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.1))), url("../src/components/weekly/weekly.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url("../src/components/weekly/weekly.jpg");
+  background-color: initial;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.weeksWrapper .weeksContainer {
+  width: 100%;
+  height: 100%;
+  background: #050304;
+  background: -webkit-gradient(linear, left bottom, left top, from(#050304), color-stop(40%, rgba(9, 9, 121, 0)), color-stop(60%, rgba(7, 6, 61, 0)), to(#050304));
+  background: linear-gradient(0deg, #050304 0%, rgba(9, 9, 121, 0) 40%, rgba(7, 6, 61, 0) 60%, #050304 100%);
+}
+
+.weeksWrapper .weeksContent {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*
+    button {
+      padding: 10px 30px;
+      margin: 20px 15px;
+      font-family: $bebas;
+      font-size: 2rem;
+      color: $white;
+      //  font-weight: bold;
+      background-color: transparent;
+      border: 2 px solid transparent;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      transition: 0.2s;
+      outline: none;
+      position: relative;
+      border: 2px solid transparent;
+      //       -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
+    }
+
+    button:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border-top: 2px solid $red;
+      border-left: 2px solid $red;
+      transition: 0.2s;
+      overflow: hidden;
+      transition-delay: 0.2s;
+    }
+    button:hover {
+      background-color: $red;
+      color: #fff;
+      box-shadow: 0 0 50px $red;
+      transition-delay: 0.2s;
+    }
+
+    button:hover:before {
+      width: 100%;
+      height: 100%;
+      transition-delay: 0s;
+    }
+
+    button:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 10px;
+      height: 10px;
+      border-bottom: 2px solid $red;
+      border-right: 2px solid $red;
+      transition: 0.2s;
+    }
+
+    button:hover:after {
+      width: 100%;
+      height: 100%;
+      transition-delay: 0s;
+    }*/
+}
+
+.weeksWrapper .weeksContent h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 5em;
+  letter-spacing: 4px;
+}
+
+.weeksWrapper .weeksContent h3 {
+  font-size: 2em;
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+
+.weeksWrapper .weeksContent h4 {
+  text-align: center;
+}
+
+.weeksWrapper .weeksContent .price {
+  letter-spacing: 2px;
+  color: #ffc601;
+  font-size: 2em;
+  margin: 15px 0;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  height: 100vh;
+  max-height: 250px;
+  margin: 0 auto;
+}
+
+.footer .footerleft h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2.6rem;
+  letter-spacing: 5px;
+}
+
+.footer .footerleft span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 5px;
+  width: 90%;
+  margin: 0 0 10px;
+  border-radius: 3rem;
+  background: -webkit-gradient(linear, left top, right top, from(#008c45), color-stop(50%, #f4f5f0), to(#cd212a));
+  background: linear-gradient(90deg, #008c45 0%, #f4f5f0 50%, #cd212a 100%);
+}
+
+.footer .footerleft .sloganDeco {
+  color: #ffc601;
+}
+
+.footer .footermiddle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .footermiddle h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2em;
+  letter-spacing: 4px;
+}
+
+.footer .footermiddle .footer-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+
+.footer .footermiddle .footer-flex .footer-flex-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .footermiddle .footer-flex .footer-flex-div h3 {
+  margin: 10px 0 5px;
+  color: #ffc601;
+  text-align: center;
+}
+
+.footer .footermiddle .footer-flex .footer-flex-div h4 {
+  margin: 5px 0 10px;
+  text-align: center;
+}
+
+.footer .footerright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 2rem;
+  width: 15%;
+}
+
+.footer .footerright svg {
+  color: #ffc601;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.footer .footerright svg:hover {
+  color: #fdfefd;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+/*# sourceMappingURL=App.css.map */

@@ -329,6 +329,10 @@ body {
   cursor: pointer;
 }
 
+.aboutUs .aboutUsContainer .aboutUsleft .pizza4 {
+  display: none;
+}
+
 .aboutUs .aboutUsContainer .aboutUsText {
   display: -webkit-box;
   display: -ms-flexbox;

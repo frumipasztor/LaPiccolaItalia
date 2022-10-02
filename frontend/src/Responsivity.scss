@@ -221,12 +221,12 @@ $montserrat: "Montserrat", sans-serif;
 
       .aboutUsleft {
         width: 100%;
-        background-image: url("./img/aboutUs/aboutuspizza.jpg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
         margin: 0 auto;
-
+        .pizza4 {
+          display: block;
+          height: 100%;
+          margin: 0 auto;
+        }
         .pizza1 {
           // left: 119px;
           display: none;
@@ -341,6 +341,15 @@ $montserrat: "Montserrat", sans-serif;
 
 //Surface Duo
 @media screen and (max-width: 540px) {
+  .aboutUsContainer {
+    .aboutUsleft {
+      .pizza4 {
+        display: block;
+        height: 80% !important;
+        margin: 0 auto;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {

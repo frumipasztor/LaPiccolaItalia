@@ -167,10 +167,11 @@
   }
   .aboutUs .aboutUsContainer .aboutUsleft {
     width: 100%;
-    background-image: url("./img/aboutUs/aboutuspizza.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    margin: 0 auto;
+  }
+  .aboutUs .aboutUsContainer .aboutUsleft .pizza4 {
+    display: block;
+    height: 100%;
     margin: 0 auto;
   }
   .aboutUs .aboutUsContainer .aboutUsleft .pizza1 {
@@ -254,6 +255,14 @@
   .footer .footerright {
     gap: 5px;
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .aboutUsContainer .aboutUsleft .pizza4 {
+    display: block;
+    height: 80% !important;
+    margin: 0 auto;
   }
 }
 

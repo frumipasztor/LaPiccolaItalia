@@ -8,6 +8,11 @@ function AboutUs() {
           <img className="pizza1" src="/img/aboutUs/pizza1.png" alt=""></img>
           <img className="pizza2" src="/img/aboutUs/pizza2.png" alt=""></img>
           <img className="pizza3" src="/img/aboutUs/pizza3.png" alt=""></img>
+          <img
+            className="pizza4"
+            src="/img/aboutUs/aboutuspizza.jpg"
+            alt=""
+          ></img>
         </div>
         <div className="aboutUsText">
           <p>

@@ -321,24 +321,41 @@ $montserrat: "Montserrat", sans-serif;
     }
   }
   .pizza-card {
+    react-multi-carousel-list {
+      width: 90vw !important;
+    }
+
     .container-with-dots {
       .pizzaContainer {
         width: 350px;
         margin: 20px auto;
-      }
-      img {
-        width: 400px !important;
-        height: 350px !important;
-      }
-      .pizzaDetails {
-        width: 400px;
-        height: 350px !important;
+
+        img {
+          width: 350px !important;
+          height: 350px !important;
+        }
+        .pizzaName {
+          display: none;
+        }
+        .pizzaDetails {
+          width: 350px;
+          height: 350px !important;
+          position: absolute;
+          top: 0%;
+          opacity: 100%;
+          background-color: rgba(0, 0, 0, 0.8);
+        }
       }
       .pizzaContainer:hover {
         .pizzaDetails {
           width: 350px;
           height: 300px;
+          background-color: rgba(0, 0, 0, 0.4);
+          backdrop-filter: blur(8px);
         }
+      }
+      .react-multiple-carousel__arrow {
+        display: none;
       }
     }
   }
@@ -356,6 +373,9 @@ $montserrat: "Montserrat", sans-serif;
       h3 {
         text-align: center;
       }
+    }
+    .footermiddle {
+      flex-basis: 100%;
     }
     .footerright {
       flex-basis: 60%;
@@ -375,6 +395,47 @@ $montserrat: "Montserrat", sans-serif;
         display: block;
         height: 80% !important;
         margin: 0 auto;
+      }
+    }
+  }
+  .pizza-card {
+    .container-with-dots {
+      .pizzaContainer {
+        width: 350px;
+        margin: 10px;
+
+        img {
+          width: 350px !important;
+          height: 300px !important;
+        }
+        .pizzaName {
+          display: none;
+        }
+        .pizzaDetails {
+          width: 350px;
+          height: 300px !important;
+          position: absolute;
+          top: 0%;
+          opacity: 100%;
+          background-color: rgba(0, 0, 0, 0.8);
+
+          .pizzaName-hover {
+            font-size: 1.5em;
+          }
+
+          .toppings {
+            font-size: 0.8em;
+            width: 50%;
+          }
+        }
+      }
+      .pizzaContainer:hover {
+        .pizzaDetails {
+          width: 350px;
+          height: 300px;
+          background-color: rgba(0, 0, 0, 0.4);
+          backdrop-filter: blur(8px);
+        }
       }
     }
   }

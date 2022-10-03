@@ -363,7 +363,6 @@ body {
 
 .pizza-card {
   max-width: 100vw;
-  height: 100%;
   height: 500px;
   margin: 0 auto;
 }
@@ -381,9 +380,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -429,7 +428,6 @@ body {
   -webkit-backdrop-filter: blur(1px);
           backdrop-filter: blur(1px);
   background-clip: padding-box;
-  border: 1px solid transparent;
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
   opacity: 0;

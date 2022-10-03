@@ -9,8 +9,8 @@ function Header() {
           <div className="header-text">
             <h1>La piccola Italia</h1>
             <span></span>
-            <h2>Best pizza in the world. </h2>
-            <h3>Have you tasted better?</h3>
+            <h2>Legjobb pizza a világon. </h2>
+            <h3>Kóstoltál már jobbat?</h3>
           </div>
         </div>
       </div>

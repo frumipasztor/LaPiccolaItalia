@@ -305,14 +305,20 @@ body {
 
     .aboutUsText {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 50%;
       padding: -10px 10px 0 10px;
       //    height: 300px;
+
       p {
         text-align: left;
         font-size: 1.3em;
+        margin: 10px 0;
+      }
+      p:nth-child(1) {
+        color: $yellow;
       }
     }
   }
@@ -551,7 +557,7 @@ body {
 .footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 80%;
   height: 100vh;
   max-height: 250px;
@@ -597,10 +603,10 @@ body {
 
     .footer-flex {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 50px;
+      gap: 0px;
 
       .footer-flex-div {
         display: flex;

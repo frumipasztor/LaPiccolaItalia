@@ -36,7 +36,7 @@
   }
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1440px) {
   .siteTitle h2 {
     font-size: 4em;
   }
@@ -85,6 +85,34 @@
     width: 350px;
     height: 250px;
   }
+  .footer {
+    width: 100vw;
+    max-height: none;
+    height: 100%;
+    margin: 40px auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .footermiddle .footer-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+  .footer .footermiddle .footer-flex .footer-flex-div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footerright {
+    gap: 10px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -109,21 +137,6 @@
   }
   .pizza-card .container-with-dots .pizzaContainer {
     margin: 20px 0;
-  }
-  .footer {
-    width: 100vw;
-    max-height: none;
-    height: 100%;
-    margin: 40px auto;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 40px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .footer .footerright {
-    gap: 10px;
   }
 }
 
@@ -207,6 +220,9 @@
     height: 300px;
   }
   .footer {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     gap: 40px;
   }
 }
@@ -252,9 +268,38 @@
     width: 350px;
     height: 300px;
   }
+  .footer {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .footer .footerleft {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+  .footer .footerleft h2 {
+    text-align: center;
+  }
+  .footer .footerleft span {
+    width: 100%;
+  }
+  .footer .footerleft h3 {
+    text-align: center;
+  }
   .footer .footerright {
-    gap: 5px;
-    width: 50%;
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    gap: 0px;
+    width: 100%;
   }
 }
 

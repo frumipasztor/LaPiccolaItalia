@@ -67,7 +67,7 @@ $montserrat: "Montserrat", sans-serif;
   }
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1440px) {
   .siteTitle {
     h2 {
       font-size: 4em;
@@ -127,6 +127,29 @@ $montserrat: "Montserrat", sans-serif;
       }
     }
   }
+  .footer {
+    width: 100vw;
+    max-height: none;
+    height: 100%;
+    margin: 40px auto;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+
+    .footermiddle {
+      .footer-flex {
+        flex-direction: column;
+        gap: 0;
+        .footer-flex-div {
+          flex-direction: column;
+        }
+      }
+    }
+
+    .footerright {
+      gap: 10px;
+    }
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -152,19 +175,6 @@ $montserrat: "Montserrat", sans-serif;
       .pizzaContainer {
         margin: 20px 0;
       }
-    }
-  }
-  .footer {
-    width: 100vw;
-    max-height: none;
-    height: 100%;
-    margin: 40px auto;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-
-    .footerright {
-      gap: 10px;
     }
   }
 }
@@ -270,6 +280,7 @@ $montserrat: "Montserrat", sans-serif;
     }
   }
   .footer {
+    justify-content: space-evenly;
     gap: 40px;
   }
 }
@@ -332,9 +343,26 @@ $montserrat: "Montserrat", sans-serif;
     }
   }
   .footer {
+    justify-content: space-evenly;
+    .footerleft {
+      order: 3;
+      flex-basis: 60%;
+      h2 {
+        text-align: center;
+      }
+      span {
+        width: 100%;
+      }
+      h3 {
+        text-align: center;
+      }
+    }
     .footerright {
-      gap: 5px;
-      width: 50%;
+      flex-basis: 60%;
+      justify-content: space-evenly;
+      order: 4;
+      gap: 0px;
+      width: 100%;
     }
   }
 }

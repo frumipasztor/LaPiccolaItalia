@@ -15,12 +15,12 @@ function AboutUs() {
           ></img>
         </div>
         <div className="aboutUsText">
+          <p>Az oldal jelenleg fejlesztés alatt áll!</p>
           <p>
-            Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum
-            dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
-            Lorem Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem
-            ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor
-            sit amet Lorem ipsum dolor sit amet
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            aperiam repellendus enim eius deserunt blanditiis, ipsum laborum
+            quisquam tenetur quae animi dignissimos excepturi in doloremque
+            rerum iure minus consequatur eaque?
           </p>
         </div>
       </div>

@@ -337,6 +337,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -350,6 +354,11 @@ body {
 .aboutUs .aboutUsContainer .aboutUsText p {
   text-align: left;
   font-size: 1.3em;
+  margin: 10px 0;
+}
+
+.aboutUs .aboutUsContainer .aboutUsText p:nth-child(1) {
+  color: #ffc601;
 }
 
 .pizza-card {
@@ -624,9 +633,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 80%;
   height: 100vh;
   max-height: 250px;
@@ -687,17 +696,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 50px;
+  gap: 0px;
 }
 
 .footer .footermiddle .footer-flex .footer-flex-div {
